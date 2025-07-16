@@ -4,8 +4,10 @@ import { Cart } from "./components/Cart/Cart";
 export const Home = () => {
   return (
     <div>
-      <Catalogue />
-      <Cart />
+      <div className="flex justify-around">
+        <Catalogue />
+        <Cart />
+      </div>
     </div>
   );
 };
