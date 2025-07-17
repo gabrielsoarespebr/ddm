@@ -1,10 +1,6 @@
 import { useAppDispatch } from "../../../../app/hooks";
 import { addToCart } from "../../../../features/cart/cartSlice";
-import type { Product } from "../../../../features/product/data";
-
-interface ProductProps {
-  product: Product;
-}
+import type { ProductProps } from "../../../../types/productProps";
 
 export const ProductCard = ({ product }: ProductProps) => {
   const dispatch = useAppDispatch();
