@@ -1,19 +1,14 @@
-import { useAppDispatch } from "../../../../app/hooks";
-import { addToCart } from "../../../../features/cart/cartSlice";
 import { productList } from "../../../../features/product/data";
+import { ProductCard } from "../ProductCard/ProductCard";
 
 export const Catalogue = () => {
-  const dispatch = useAppDispatch();
   return (
-    <div>
-      <p>Catalogo</p>
-      <ul>
+    <div className="w-1/2">
+      <p>Catálogo</p>
+      <ul className="flex flex-wrap">
         {productList.map((product) => (
-          <li key={product.id}>
-            <p>{product.name}</p>
-            <button onClick={() => dispatch(addToCart(product))}>
-              Adicionar ao carrinho
-            </button>
+          <li key={product.id} className="w-1/2">
+            <ProductCard product={product} />
           </li>
         ))}
       </ul>
