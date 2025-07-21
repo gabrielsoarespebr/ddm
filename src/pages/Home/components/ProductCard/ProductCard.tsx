@@ -23,7 +23,7 @@ export const ProductCard = ({ product }: ProductProps) => {
           className="w-full mt-4 p-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-b cursor-pointer"
           onClick={() => dispatch(addToCart(product))}
         >
-          Adicionar ao carrinho
+          Adicionar ao orçamento
         </button>
       </div>
     </div>

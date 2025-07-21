@@ -4,7 +4,7 @@ import { Cart } from "./components/Cart/Cart";
 export const Home = () => {
   return (
     <div>
-      <div className="flex justify-around">
+      <div>
         <Catalogue />
         <Cart />
       </div>

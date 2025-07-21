@@ -32,8 +32,19 @@ const cartSlice = createSlice({
     removeFromCart() {
       console.log("Removeu do carrinho");
     },
-    updateQuantity() {
-      console.log("Atualizou quantidade do produto");
+    updateQuantity(
+      state,
+      action: PayloadAction<{ id: string; quantity: number }>
+    ) {
+      const { id, quantity } = action.payload;
+
+      const cartItemToUpdate = state.cartItemList.find(
+        (cartItem) => cartItem.id === id
+      );
+
+      if (cartItemToUpdate) {
+        cartItemToUpdate.quantity = quantity;
+      }
     },
   },
 });
