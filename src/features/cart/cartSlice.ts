@@ -29,8 +29,12 @@ const cartSlice = createSlice({
         state.cartItemList.push({ ...product, quantity: 1 });
       }
     },
-    removeFromCart() {
-      console.log("Removeu do carrinho");
+    removeFromCart(state, action: PayloadAction<string>) {
+      const id = action.payload;
+
+      state.cartItemList = state.cartItemList.filter(
+        (cartItem) => cartItem.id !== id
+      );
     },
     updateQuantity(
       state,

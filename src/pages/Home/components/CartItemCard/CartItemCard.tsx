@@ -1,6 +1,10 @@
 import { useAppDispatch } from "../../../../app/hooks";
-import { updateQuantity } from "../../../../features/cart/cartSlice";
+import {
+  removeFromCart,
+  updateQuantity,
+} from "../../../../features/cart/cartSlice";
 import type { CartItemProps } from "../../../../types/cartItemProps";
+import { Trash } from "lucide-react";
 
 export const CartItemCard = ({ cartItem }: CartItemProps) => {
   const dispatch = useAppDispatch();
@@ -13,12 +17,12 @@ export const CartItemCard = ({ cartItem }: CartItemProps) => {
           alt={`Imagem do produto ${cartItem.name}`}
           className="w-1/6 object-contain rounded"
         />
-        <div className="">
+        <div>
           <div className="p-2">
             <p className="font-bold">{cartItem.name}</p>
-            <div className="flex">
-              <div className="flex gap-2">
-                <label htmlFor="cartItemId" className="text-gray-500">
+            <div className="flex gap-4 mt-1">
+              <div className="flex items-center gap-2">
+                <label htmlFor="cartItemId" className="text-gray-700">
                   Quantidade:
                 </label>
                 <input
@@ -27,7 +31,7 @@ export const CartItemCard = ({ cartItem }: CartItemProps) => {
                   id={`cartItemId${cartItem.id}`}
                   min={1}
                   max={999}
-                  className="bg-white rounded w-10 text-center"
+                  className="h-full bg-white rounded w-10 text-center"
                   value={cartItem.quantity}
                   onChange={(e) =>
                     dispatch(
@@ -39,6 +43,13 @@ export const CartItemCard = ({ cartItem }: CartItemProps) => {
                   }
                 />
               </div>
+              <button
+                className="flex gap-1 items-center bg-red-600 hover:bg-red-500 rounded p-1 cursor-pointer"
+                onClick={() => dispatch(removeFromCart(cartItem.id))}
+              >
+                <Trash color="white" size={14} />
+                <p className="text-white text-sm">Excluir</p>
+              </button>
             </div>
           </div>
         </div>
