@@ -11,6 +11,7 @@ export const ProductCard = ({ product }: ProductProps) => {
         <img
           src={product.imageUrl}
           alt={`Imagem do produto ${product.name}`}
+          loading="lazy"
           className="max-h-full place-self-center rounded-t"
         />
       </div>
