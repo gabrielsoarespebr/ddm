@@ -1,0 +1,5 @@
+#cartItem {
+  height: 18vh;
+
+  background: linear-gradient(white, var(--colorSeptenary));
+}
