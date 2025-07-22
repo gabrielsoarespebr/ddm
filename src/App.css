@@ -29,3 +29,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.dividerPrimary {
+  background: linear-gradient(
+    90deg,
+    var(--colorSecondary),
+    var(--colorQuaternary)
+  );
+
+  position: sticky;
+  top: var(--headerHeight);
+  height: var(--dividerHeight);
+}
