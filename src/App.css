@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* GLOBAL VARIABLES */
+:root {
+  --colorPrimary: #022658;
+  --colorSecondary: #1460b2;
+  --colorTertiary: #4ba1c2;
+  --colorQuaternary: #a0c4da;
+  --colorQuinary: #5b5a58;
+  --colorSenary: #c8c7c2;
+  --colorSeptenary: #f3f4f6;
+  --colorOctary: #dfcfb4;
+  --colorNonary: #f2ece3;
+
+  --headerHeight: 6rem;
+  --dividerHeight: 0.2rem;
+}
+
+/* CUSTOM CSS */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
