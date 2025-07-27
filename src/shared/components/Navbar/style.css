@@ -1,0 +1,13 @@
+#navbar {
+  height: 2.5rem;
+
+  padding-left: 5vw;
+
+  background: linear-gradient(
+    90deg,
+    var(--colorSecondary),
+    var(--colorQuaternary)
+  );
+
+  border-radius: 5rem 0 0 0;
+}
