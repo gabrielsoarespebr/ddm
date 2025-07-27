@@ -5,10 +5,26 @@ header {
   top: 0;
 
   background-color: var(--colorSeptenary);
+
+  & > #logoContainer {
+    width: 35%;
+
+    padding-left: 3vw;
+  }
+
+  & > div:not(#logoContainer) {
+    width: 65%;
+  }
+
+  & #contactInfo {
+    width: 50%;
+
+    color: var(--colorPrimary);
+  }
 }
 
 #companyLogo {
-  width: 5rem;
+  width: 7rem;
 
   object-fit: cover;
 }
@@ -16,13 +32,41 @@ header {
 .companyTitle {
   font-size: 3.6rem;
 
+  letter-spacing: 0.35rem;
   margin: -1rem 0;
 }
 
 .companySubtitleFirstPart {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .companySubtitleSecondPart {
-  font-size: 0.65rem;
+  margin-top: -0.1rem;
+  font-size: 0.7rem;
+
+  font-weight: 600;
+}
+
+#cartBtn {
+  color: var(--colorPrimary);
+
+  position: relative;
+
+  & > p {
+    font-size: 70%;
+    font-weight: bold;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: absolute;
+
+    top: -0.5rem;
+    right: -1rem;
+
+    background-color: var(--colorPrimary);
+    color: white;
+
+    border-radius: 50%;
+  }
 }

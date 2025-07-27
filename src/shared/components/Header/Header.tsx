@@ -1,10 +1,12 @@
 import "./style.css";
 import dmmLogo from "../../../assets/images/dmmLogo.webp";
+import { Navbar } from "../Navbar/Navbar";
+import { MapPinned, Phone, ScrollText } from "lucide-react";
 
 export const Header = () => {
   return (
-    <header className="p-2">
-      <div className="w-1/3 -mt-1 flex items-center">
+    <header className="flex">
+      <div id="logoContainer" className="flex items-center">
         <img
           src={dmmLogo}
           alt="Logotipo da DDM Distribuição e Manutenção Industrial"
@@ -19,6 +21,31 @@ export const Header = () => {
             </span>
           </h2>
         </div>
+      </div>
+      <div className="flex flex-col justify-between">
+        <div className="pt-6 flex justify-around items-center">
+          <div id="contactInfo" className="flex justify-between items-center">
+            <div className="flex items-center gap-4">
+              <Phone />
+              <div>
+                <p>WhatsApp:</p>
+                <p>+55 81 XXXX XXXX</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <MapPinned />
+              <div>
+                <p>Endereço:</p>
+                <p>XXXXXXXX</p>
+              </div>
+            </div>
+          </div>
+          <button id="cartBtn" title="Lista de orçamento">
+            <ScrollText size={36} />
+            <p>12</p>
+          </button>
+        </div>
+        <Navbar />
       </div>
     </header>
   );
