@@ -1,7 +1,8 @@
 import "./style.css";
 import dmmLogo from "../../../assets/images/dmmLogo.webp";
 import { Navbar } from "../Navbar/Navbar";
-import { MapPinned, Phone, ScrollText } from "lucide-react";
+import { MapPinned, Phone } from "lucide-react";
+import { CartBtn } from "../CartBtn/CartBtn";
 
 export const Header = () => {
   return (
@@ -40,10 +41,7 @@ export const Header = () => {
               </div>
             </div>
           </div>
-          <button id="cartBtn" title="Lista de orçamento">
-            <ScrollText size={36} />
-            <p>12</p>
-          </button>
+          <CartBtn />
         </div>
         <Navbar />
       </div>
