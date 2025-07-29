@@ -14,6 +14,10 @@
 
   --headerHeight: 8rem;
   --dividerHeight: 0.2rem;
+
+  --borderRounded: 0.25rem;
+
+  --trasitionDuration: 0.7s;
 }
 
 /* CUSTOM CSS */

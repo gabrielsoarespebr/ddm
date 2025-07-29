@@ -4,3 +4,47 @@
 
   background-color: var(--colorSeptenary);
 }
+
+@property --gradientStartColor {
+  syntax: "<color>";
+  initial-value: #1460b2;
+  inherits: false;
+}
+
+@property --gradientEndColor {
+  syntax: "<color>";
+  initial-value: #1460b2;
+  inherits: false;
+}
+
+#requestPricingLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  margin: 0.75rem 0.5rem;
+  padding: 0.8rem;
+
+  border-radius: var(--borderRounded);
+
+  background: linear-gradient(
+    160deg,
+    var(--gradientStartColor) 40%,
+    var(--gradientEndColor)
+  );
+  color: white;
+
+  transition: --gradientStartColor var(--trasitionDuration),
+    --gradientEndColor var(--trasitionDuration);
+
+  &:hover {
+    --gradientStartColor: var(--colorTertiary);
+    --gradientEndColor: var(--colorQuaternary);
+  }
+
+  & > p {
+    font-size: 150%;
+  }
+}
