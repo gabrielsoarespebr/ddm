@@ -1,6 +1,5 @@
 export interface Product {
   id: string;
-  supplierCode: string;
   name: string;
   description: string;
   imageUrl: string;
@@ -9,8 +8,7 @@ export interface Product {
 
 export const productList: Product[] = [
   {
-    id: "CI0000",
-    supplierCode: "ROY",
+    id: "ROYCI0000",
     name: "Correia 14M 1190 40mm de Largura (1190 14M) Sincronizadora Optibelt Omega",
     description: `
 Material Construtivo: Borracha Neopre
@@ -36,8 +34,7 @@ Obs: Por favor, consultar disponibilidade.
     category: "correias-industriais",
   },
   {
-    id: "CI0001",
-    supplierCode: "ROY",
+    id: "ROYCI0001",
     name: "Correia Polyflex JB Pu - 7M1030 Gates (7M1030) Poliuretano",
     description: `
 Material Construtivo: Poliuretano
@@ -78,8 +75,7 @@ Polias Recomendadas: Polias PolyFlex
     category: "correias-industriais",
   },
   {
-    id: "ME0000",
-    supplierCode: "ROY",
+    id: "ROYME0000",
     name: "Furadeira Industrial FC-45",
     description: `
 Marca: Ferrari
@@ -133,8 +129,7 @@ Peso do produto:430 Kg
     category: "maquinas-e-equipamentos",
   },
   {
-    id: "ME0001",
-    supplierCode: "ROY",
+    id: "ROYME0001",
     name: "Lixadeira combinada LCM-46",
     description: `
 Marca:	Ferrari
@@ -174,8 +169,7 @@ Peso:13.5 kg
     category: "maquinas-e-equipamentos",
   },
   {
-    id: "PO0000",
-    supplierCode: "ROY",
+    id: "ROYPO0000",
     name: "Polia 5M 48 Dentes 25mm - Alumínio",
     description: `
 Material Construtivo:	Aço
@@ -189,12 +183,11 @@ Embalagem/Quant.:	1
 Número De Dentes:	48
 `,
     imageUrl:
-      "https://s3-sa-east-1.amazonaws.com/loja2/58845a86debfd79b4bda1da325bdfd2f.png",
+      "https://5.imimg.com/data5/NP/EW/MY-21647575/timing-pulley-500x500.jpg",
     category: "polias",
   },
   {
-    id: "RO0000",
-    supplierCode: "ROY",
+    id: "ROYRO0000",
     name: "Rolamentos Cooper",
     description: `
 Rolamentos COOPER
@@ -227,8 +220,7 @@ Motores e geradores
     category: "rolamentos-industriais",
   },
   {
-    id: "RO0001",
-    supplierCode: "ROY",
+    id: "ROYRO0001",
     name: "Rolamentos Link Belt",
     description: `
 Rolamentos radiais de esferas e de agulhas ;
@@ -249,8 +241,7 @@ Estes rolamentos constam com os mais diversos tipos de medidas e materiais que s
     category: "rolamentos-industriais",
   },
   {
-    id: "RO0002",
-    supplierCode: "ROY",
+    id: "ROYRO0002",
     name: "Rolamentos Nice",
     description: `
 Nice Ball Bearing foi criado em 1902, quando William Nice iniciou uma das primeiras instalações do mundo para a fabricação de rolamentos.
