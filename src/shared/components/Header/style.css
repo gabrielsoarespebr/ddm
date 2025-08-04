@@ -4,7 +4,7 @@ header {
   position: sticky;
   top: 0;
 
-  background-color: var(--colorSeptenary);
+  background-color: white;
 
   & > #logoContainer {
     width: 35%;
@@ -19,7 +19,7 @@ header {
   & #contactInfo {
     width: 50%;
 
-    color: var(--colorPrimary);
+    color: var(--colorSecondary);
   }
 }
 
@@ -48,7 +48,7 @@ header {
 }
 
 #cartBtn {
-  color: var(--colorPrimary);
+  color: var(--colorSecondary);
 
   position: relative;
 
@@ -64,7 +64,7 @@ header {
     top: -0.5rem;
     right: -1rem;
 
-    background-color: var(--colorPrimary);
+    background-color: var(--colorSecondary);
     color: white;
 
     border-radius: 50%;
