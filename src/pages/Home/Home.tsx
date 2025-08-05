@@ -1,12 +1,15 @@
-import { Catalogue } from "./components/Catalogue/Catalogue";
-import { Cart } from "./components/Cart/Cart";
+import "./style.css";
 
 export const Home = () => {
   return (
     <div>
-      <div>
-        <Catalogue />
-        {/* <Cart /> */}
+      <div id="banner">
+        <div className="flex flex-col justify-center items-center">
+          <p className="section-highlight-text">Soluções industriais eficazes</p>
+          <p className="my-7">Peças, serviços e suporte técnico que aumentam a performance da sua operação.</p>
+
+          <button id="bannerCTA">Conheça nossos produtos</button>
+        </div>
       </div>
     </div>
   );
