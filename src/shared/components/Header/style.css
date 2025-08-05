@@ -6,20 +6,26 @@ header {
 
   background-color: white;
 
-  & > #logoContainer {
-    width: 35%;
+  & > div {
+    padding: 0.5rem 8.5rem;
 
-    padding-left: 3vw;
-  }
-
-  & > div:not(#logoContainer) {
-    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   & #contactInfo {
-    width: 50%;
+    width: 60%;
 
     color: var(--colorSecondary);
+
+    & #phone {
+      width: 40%;
+    }
+
+    & #address {
+      width: 60%;
+    }
   }
 }
 

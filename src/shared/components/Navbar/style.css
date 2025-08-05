@@ -1,8 +1,13 @@
 #navbar {
   height: 3.5rem;
   width: 80vw;
-  
-  margin: auto;
+
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: calc(var(--headerHeight) - 1.8rem);
 
   background: linear-gradient(
     90deg,

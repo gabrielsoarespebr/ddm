@@ -2,12 +2,11 @@ import "./style.css";
 import dmmLogo from "../../../assets/images/dmmLogo.webp";
 import { Navbar } from "../Navbar/Navbar";
 import { MapPinned, Phone } from "lucide-react";
-import { CartBtn } from "../CartBtn/CartBtn";
 
 export const Header = () => {
   return (
     <header>
-      <div className="flex">
+      <div>
         <div id="logoContainer" className="flex items-center">
           <img
             src={dmmLogo}
@@ -25,22 +24,22 @@ export const Header = () => {
           </div>
         </div>
         <div id="contactInfo" className="flex justify-between items-center">
-          <div className="flex items-center gap-4">
+          <div id="phone" className="flex items-center gap-4">
             <Phone />
             <div>
-              <p>WhatsApp:</p>
-              <p>+55 81 XXXX XXXX</p>
+              <p className="font-semibold">WhatsApp:</p>
+              <p>+55 81 9 8302 2802</p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div id="address" className="flex items-center gap-4">
             <MapPinned />
             <div>
-              <p>Endereço:</p>
-              <p>XXXXXXXX</p>
+              <p className="font-semibold">Endereço:</p>
+              <p>Rua Maria Gomes da Silva, n° 105</p>
+              <p>Ouro Preto, Olinda - PE, CEP 53370-680</p>
             </div>
           </div>
         </div>
-        <CartBtn />
       </div>
       <Navbar />
     </header>
