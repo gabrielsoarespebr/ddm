@@ -14,7 +14,7 @@ export const Header = () => {
             id="companyLogo"
           />
           <div className="text-center">
-            <h1 className="title companyTitle">DMM</h1>
+            <h1 className="companyTitle">DMM</h1>
             <h2 className="title block companySubtitleFirstPart -mt-6 uppercase">
               <span>Distribuição e</span>
               <span className="block companySubtitleSecondPart">

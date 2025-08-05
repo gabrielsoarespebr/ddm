@@ -1,0 +1,33 @@
+#banner {
+  width: 100%;
+
+  height: calc(3.3 * var(--headerHeight));
+  color: white;
+
+  background: url("../../assets/images/bannerBackground1.webp");
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bannerCTA {
+  margin-top: 3rem;
+
+  padding: 1rem 2rem;
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  border: 0.1rem solid white;
+  border-radius: var(--borderRounded);
+
+  transition-duration: var(--trasitionDuration);
+
+  &:hover {
+    background-color: white;
+    color: var(--colorPrimary);
+  }
+}

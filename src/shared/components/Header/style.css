@@ -35,11 +35,20 @@ header {
   object-fit: cover;
 }
 
-.companyTitle {
-  font-size: 3.6rem;
+.companyTitle,
+.companySubtitleFirstPart,
+.companySubtitleSecondPart {
+  color: var(--colorSecondary);
 
-  letter-spacing: 0.35rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.companyTitle {
   margin: -1rem 0;
+
+  font-size: 3.6rem;
+  letter-spacing: 0.35rem;
 }
 
 .companySubtitleFirstPart {
