@@ -1,0 +1,7 @@
+#company-services {
+  color: var(--colorSecondary);
+
+  & > p {
+    margin-bottom: 3rem;
+  }
+}
