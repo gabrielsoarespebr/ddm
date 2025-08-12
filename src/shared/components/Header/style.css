@@ -6,6 +6,8 @@ header {
 
   background-color: white;
 
+  z-index: 999;
+
   & > div {
     padding: 0.5rem 8.5rem;
 
