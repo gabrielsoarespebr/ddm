@@ -14,6 +14,7 @@ export const CompanyServices = () => {
       descriptionHighlightPart: "peças industriais",
       imageUrl: industrialGear,
       textAlt: "Peças industriais",
+      horizontalPosition: "left",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export const CompanyServices = () => {
         "reparo e manutenção de equipamentos industriais",
       imageUrl: industrialWorker,
       textAlt: "Trabalhador na indústria",
+      horizontalPosition: "right",
     },
   ];
 

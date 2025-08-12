@@ -7,13 +7,25 @@ export const CompanyServiceCard = ({ companyService }: CompanyServiceProps) => {
   );
 
   return (
-    <div className="company-service flex justify-center items-center gap-20">
+    <div
+      className={
+        "company-service flex justify-center items-center gap-20 " +
+        (companyService.horizontalPosition === "right"
+          ? "flex-row-reverse"
+          : "")
+      }
+    >
       <div className="company-service-image-border w-70 h-105 rounded-lg">
         <img
           src={companyService.imageUrl}
           alt={companyService.textAlt}
           loading="lazy"
-          className="w-70 h-105 translate-8 object-cover rounded-lg"
+          className={
+            "w-70 h-105 object-cover rounded-lg " +
+            (companyService.horizontalPosition === "right"
+              ? "-translate-8"
+              : "translate-8")
+          }
         />
       </div>
       <div>
