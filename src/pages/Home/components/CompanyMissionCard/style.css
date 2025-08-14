@@ -1,0 +1,35 @@
+.mission-card {
+  width: 60%;
+  height: 20rem;
+
+  color: white;
+
+  border-radius: 2rem;
+
+  position: relative;
+
+  background: url("../../../../assets/images/missionBackground1.webp");
+  background-size: cover;
+  background-position: center;
+
+  & > div {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  & > img {
+    height: 25rem;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.mission-title {
+  font-size: 2rem;
+}
+
+.mission-description {
+  font-size: 1.3rem;
+}

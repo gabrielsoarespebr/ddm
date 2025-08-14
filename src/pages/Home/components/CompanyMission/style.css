@@ -1,0 +1,5 @@
+#company-mission {
+  & > p {
+    margin-bottom: 3rem;
+  }
+}
