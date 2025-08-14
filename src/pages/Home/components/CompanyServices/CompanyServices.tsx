@@ -31,7 +31,7 @@ export const CompanyServices = () => {
 
   return (
     <div id="company-services" className="px-20 py-10">
-      <p className="highlight-title-text text-center">Serviços</p>
+      <p className="highlight-title-text text-center">Nossa especialidade</p>
 
       {companyServiceList.map((companyService) => (
         <CompanyServiceCard
