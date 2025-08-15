@@ -4,17 +4,25 @@ import { Eye, Gem, Target } from "lucide-react";
 
 export const CompanyMissionCard = ({ mission }: MissionProps) => {
   return (
-    <div className="mission-card">
-      <div>
-        <div className="mission-title flex items-center gap-3">
-          {(mission.title === "Visão" && <Eye />) ||
-            (mission.title === "Valores" && <Gem />) ||
-            (mission.title === "Missão" && <Target />)}
-          <p>{mission.title}</p>
+    <div
+      className={
+        (mission.horizontalPosition === "center" && "flex justify-center") ||
+        (mission.horizontalPosition === "right" && "flex justify-end") ||
+        ""
+      }
+    >
+      <div className="mission-card">
+        <div>
+          <div className="mission-title flex items-center gap-3">
+            {(mission.title === "Visão" && <Eye />) ||
+              (mission.title === "Valores" && <Gem />) ||
+              (mission.title === "Missão" && <Target />)}
+            <p>{mission.title}</p>
+          </div>
+          <p className="mission-description">{mission.description}</p>
         </div>
-        <p className="mission-description">{mission.description}</p>
+        <img src={mission.imageUrl} alt={mission.textAlt} loading="lazy" />
       </div>
-      <img src={mission.imageUrl} alt={mission.textAlt} loading="lazy" />
     </div>
   );
 };
