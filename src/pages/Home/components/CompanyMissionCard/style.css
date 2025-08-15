@@ -1,5 +1,5 @@
 .mission-card {
-  width: 60%;
+  width: 67%;
   height: 20rem;
 
   color: white;
@@ -13,12 +13,12 @@
   background-position: center;
 
   & > div {
-    width: 50%;
+    width: 51%;
     padding: 2rem;
   }
 
   & > img {
-    height: 25rem;
+    height: 24rem;
     position: absolute;
 
     bottom: 0;
