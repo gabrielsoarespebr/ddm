@@ -32,15 +32,3 @@ body {
   font-family: "Merriweather", serif;
   font-size: 3rem;
 }
-
-.dividerPrimary {
-  background: linear-gradient(
-    90deg,
-    var(--colorSecondary) 40%,
-    var(--colorQuaternary)
-  );
-
-  position: sticky;
-  top: var(--headerHeight);
-  height: var(--dividerHeight);
-}
