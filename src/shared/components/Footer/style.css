@@ -1,0 +1,7 @@
+footer {
+  background: linear-gradient(
+    90deg,
+    var(--colorSecondary),
+    var(--colorTertiary)
+  );
+}

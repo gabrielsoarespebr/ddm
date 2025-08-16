@@ -1,6 +1,7 @@
 import "./style.css";
 import { CompanyServices } from "./components/CompanyServices/CompanyServices";
 import { CompanyMission } from "./components/CompanyMission/CompanyMission";
+import { Footer } from "../../shared/components/Footer/Footer";
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
 
       <CompanyServices />
       <CompanyMission />
+      <Footer />
     </div>
   );
 };
