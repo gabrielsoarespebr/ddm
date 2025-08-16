@@ -11,19 +11,19 @@ export const Header = () => {
           <img
             src={dmmLogo}
             alt="Logotipo da DDM Distribuição e Manutenção Industrial"
-            id="companyLogo"
+            id="company-logo"
           />
           <div className="text-center">
-            <h1 className="companyTitle">DMM</h1>
-            <h2 className="title block companySubtitleFirstPart -mt-6 uppercase">
+            <h1 className="company-title">DMM</h1>
+            <h2 className="title block company-subtitle-first-part -mt-6 uppercase">
               <span>Distribuição e</span>
-              <span className="block companySubtitleSecondPart">
+              <span className="block company-subtitle-second-part">
                 Manutenção Industrial
               </span>
             </h2>
           </div>
         </div>
-        <div id="contactInfo" className="flex justify-between items-center">
+        <div id="contact-info" className="flex justify-between items-center">
           <div id="phone" className="flex items-center gap-4">
             <Phone />
             <div>

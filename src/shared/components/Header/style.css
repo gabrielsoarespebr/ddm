@@ -16,7 +16,7 @@ header {
     align-items: center;
   }
 
-  & #contactInfo {
+  & #contact-info {
     width: 60%;
 
     color: var(--colorSecondary);
@@ -31,40 +31,40 @@ header {
   }
 }
 
-#companyLogo {
+#company-logo {
   width: 7rem;
 
   object-fit: cover;
 }
 
-.companyTitle,
-.companySubtitleFirstPart,
-.companySubtitleSecondPart {
+.company-title,
+.company-subtitle-first-part,
+.company-subtitle-second-part {
   color: var(--colorSecondary);
 
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-.companyTitle {
+.company-title {
   margin: -1rem 0;
 
   font-size: 3.6rem;
   letter-spacing: 0.35rem;
 }
 
-.companySubtitleFirstPart {
+.company-subtitle-first-part {
   font-size: 1.15rem;
 }
 
-.companySubtitleSecondPart {
+.company-subtitle-second-part {
   margin-top: -0.1rem;
   font-size: 0.7rem;
 
   font-weight: 600;
 }
 
-#cartBtn {
+#cart-btn {
   color: var(--colorSecondary);
 
   position: relative;

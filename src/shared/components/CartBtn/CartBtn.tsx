@@ -11,7 +11,7 @@ export const CartBtn = () => {
   );
 
   return (
-    <button id="cartBtn" title="Lista de orçamento">
+    <button id="cart-btn" title="Lista de orçamento">
       <ScrollText size={36} />
       <p>{cartCurrentTotalAmount}</p>
     </button>
