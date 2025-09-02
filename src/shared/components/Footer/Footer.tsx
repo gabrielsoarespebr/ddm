@@ -51,8 +51,7 @@ export const Footer = () => {
               >
                 <MapPinned />
                 <div>
-                  <p>Rua Maria Gomes da Silva, n° 105</p>
-                  <p>Ouro Preto, Olinda - PE, CEP 53370-680</p>
+                  <p>Olinda - PE</p>
                 </div>
               </a>
             </div>
