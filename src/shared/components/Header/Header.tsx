@@ -35,8 +35,7 @@ export const Header = () => {
             <MapPinned />
             <div>
               <p className="font-semibold">Endereço:</p>
-              <p>Rua Maria Gomes da Silva, n° 105</p>
-              <p>Ouro Preto, Olinda - PE, CEP 53370-680</p>
+              <p>Olinda - PE</p>
             </div>
           </div>
         </div>

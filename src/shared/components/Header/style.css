@@ -17,16 +17,13 @@ header {
   }
 
   & #contact-info {
-    width: 60%;
+    width: 45%;
 
     color: var(--colorSecondary);
 
-    & #phone {
-      width: 40%;
-    }
-
-    & #address {
-      width: 60%;
+    & #phone,
+    #address {
+      width: 45%;
     }
   }
 }
