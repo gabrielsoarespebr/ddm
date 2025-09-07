@@ -3,11 +3,11 @@ import "./style.css";
 
 export const Footer = () => {
   return (
-    <footer className="px-40 pt-10 text-white">
-      <div className="flex justify-between">
+    <footer className="md:px-40 pt-10 text-white">
+      <div className="flex justify-between flex-col md:flex-row">
         <div className="w-1/2">
           <p className="font-bold mb-2">Institucional</p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center flex-col md:flex-row">
             <div className="flex flex-col gap-2">
               <a
                 href="https://wa.me/558183022802"
