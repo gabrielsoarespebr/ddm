@@ -39,7 +39,7 @@ export const CompanyMissionCard = ({ mission }: MissionProps) => {
           </div>
           <p className="mission-description">{mission.description}</p>
         </div>
-        <img src={mission.imageUrl} alt={mission.textAlt} loading="lazy" />
+        <img src={mission.imageUrl} alt={mission.textAlt} loading="lazy" className="invisible lg:visible" />
       </motion.div>
     </div>
   );

@@ -33,3 +33,20 @@
 .mission-description {
   font-size: 1.3rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .mission-card {
+    width: 100%;
+    height: 15rem;
+
+    & > div {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission-card {
+    height: 24rem;
+  }
+}

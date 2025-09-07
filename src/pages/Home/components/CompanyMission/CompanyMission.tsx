@@ -37,9 +37,9 @@ export const CompanyMission = () => {
   ];
 
   return (
-    <div id="company-mission" className="px-40 py-10">
+    <div id="company-mission" className="px-5 md:px-20 lg:px-40 py-10">
       <p className="highlight-title-text text-center">Nossa filosofia</p>
-      <ul className="flex flex-col gap-14">
+      <ul className="flex flex-col gap-5 md:gap-10 lg:gap-14">
         {missionList.map((mission) => (
           <li key={mission.id}>
             <CompanyMissionCard mission={mission} />
