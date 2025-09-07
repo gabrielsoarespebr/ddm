@@ -9,7 +9,5 @@
 @media screen and (max-width: 1024px) {
   #company-mission > p {
     margin-bottom: 2rem;
-
-    color: var(--colorSecondary);
   }
 }
