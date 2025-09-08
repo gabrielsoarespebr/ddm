@@ -84,3 +84,17 @@ header {
     border-radius: 50%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  header > div {
+    padding: 0.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > #contact-info {
+      display: none;
+    }
+  }
+}
