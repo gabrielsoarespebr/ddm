@@ -5,3 +5,9 @@
     margin-bottom: 3rem;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #company-services > p {
+    margin-bottom: 2rem;
+  }
+}

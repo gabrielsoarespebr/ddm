@@ -48,3 +48,17 @@
 
   border-radius: var(--borderRounded);
 }
+
+@media screen and (max-width: 1024px) {
+  .company-service:first-of-type {
+    margin-bottom: 2rem;
+  }
+
+  .company-service > div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .company-service-image-border {
+    display: none;
+  }
+}

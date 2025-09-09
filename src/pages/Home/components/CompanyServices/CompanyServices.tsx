@@ -30,7 +30,7 @@ export const CompanyServices = () => {
   ];
 
   return (
-    <div id="company-services" className="px-20 py-10">
+    <div id="company-services" className="px-5 md:px-20 py-10">
       <p className="highlight-title-text text-center">Nossa especialidade</p>
 
       {companyServiceList.map((companyService) => (
