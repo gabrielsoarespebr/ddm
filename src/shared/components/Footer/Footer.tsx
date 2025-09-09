@@ -3,17 +3,17 @@ import "./style.css";
 
 export const Footer = () => {
   return (
-    <footer className="md:px-40 pt-10 text-white">
-      <div className="flex justify-between flex-col md:flex-row">
-        <div className="w-1/2">
-          <p className="font-bold mb-2">Institucional</p>
-          <div className="flex justify-between items-center flex-col md:flex-row">
-            <div className="flex flex-col gap-2">
+    <footer className="px-8 md:px-40 pt-10 text-white">
+      <div className="flex justify-between items-center md:items-start flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 mb-5 lg:mb-0">
+          <p className="font-bold mb-2 text-center lg:text-left">Institucional</p>
+          <div className="flex justify-between items-center flex-col lg:flex-row">
+            <div className="flex flex-col items-center md:items-start gap-2 mb-2 lg:mb-0">
               <a
                 href="https://wa.me/558183022802"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2"
+                className="w-full flex justify-center lg:justify-start gap-2"
               >
                 <Phone />
                 <p>+55 81 9 8302 2802</p>
@@ -22,18 +22,18 @@ export const Footer = () => {
                 href="mailto:dmmdistribuicao@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2"
+                className="w-full flex justify-center lg:justify-start gap-2"
               >
                 <Mail />
                 <p>dmmdistribuicao@gmail.com</p>
               </a>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col items-center md:items-start gap-2">
               <a
                 href="https://cnpj.biz/58257580000187"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2"
+                className="w-full flex justify-center lg:justify-start gap-2"
               >
                 <Factory />
                 <p>58.257.580/0001-87</p>
@@ -42,7 +42,7 @@ export const Footer = () => {
                 href="https://maps.app.goo.gl/k4GbCuai7jQy7HNi8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2"
+                className="w-full flex justify-center lg:justify-start gap-2"
               >
                 <MapPinned />
                 <div>
@@ -52,9 +52,9 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
-          <p className="font-bold mb-2">Horário de funcionamento</p>
-          <div className="flex gap-2">
+        <div className="w-full lg:w-auto">
+          <p className="font-bold mb-2 text-center lg:text-left">Horário de funcionamento</p>
+          <div className="flex gap-2 justify-center lg:justify-start">
             <Clock />
             <p>Segunda a sexta, 08:00 às 18:00</p>
           </div>
