@@ -1,15 +1,17 @@
-import { Provider } from "react-redux";
 import "./App.css";
-import { Home } from "./pages/Home/Home";
-import { store } from "./app/store";
+
 import { Header } from "./shared/components/Header/Header";
 import whatsappIcon from "./assets/images/whatsappIcon.webp";
 
+import { Outlet } from "react-router-dom";
+import { Footer } from "./shared/components/Footer/Footer";
+
 function App() {
   return (
-    <Provider store={store}>
+    <>
       <Header />
-      <Home />
+      <Outlet />
+      <Footer />
       <a
         href="https://wa.me/558183022802"
         target="_blank"
@@ -20,7 +22,7 @@ function App() {
       >
         <img src={whatsappIcon} alt="Ícone de WhatsApp" />
       </a>
-    </Provider>
+    </>
   );
 }
 

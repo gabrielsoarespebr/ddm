@@ -8,7 +8,9 @@ export const Home = () => {
     <div>
       <div id="banner">
         <div className="flex flex-col justify-center items-center px-8 lg:px-0">
-          <p className="highlight-title-text text-center">Soluções industriais eficazes</p>
+          <p className="highlight-title-text text-center">
+            Soluções industriais eficazes
+          </p>
           <p className="my-7 text-center">
             Peças, serviços e suporte técnico que aumentam a performance da sua
             operação.
@@ -20,7 +22,6 @@ export const Home = () => {
 
       <CompanyServices />
       <CompanyMission />
-      <Footer />
     </div>
   );
 };
