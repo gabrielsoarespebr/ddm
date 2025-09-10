@@ -71,3 +71,19 @@ body {
   top: -0.3dvh;
   right: -0.3dvw;
 }
+
+@media screen and (max-width: 768px) {
+  #whatsapp-fixed-icon {
+    width: 4rem;
+    height: 4rem;
+
+    right: 2rem;
+    bottom: 1.6rem;
+
+    font-size: 2rem;
+  }
+
+  #whatsapp-fixed-icon:after {
+    padding: 0.3rem 0.6rem;
+  }
+}
