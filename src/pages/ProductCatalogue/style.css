@@ -1,0 +1,13 @@
+#catalogue {
+  color: var(--colorSecondary);
+
+  & > p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #catalogue > p {
+    margin-bottom: 2rem;
+  }
+}
