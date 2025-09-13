@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="flex justify-between items-center flex-col lg:flex-row">
             <div className="flex flex-col items-center md:items-start gap-2 mb-2 lg:mb-0">
               <a
-                href="https://wa.me/558183022802"
+                href="https://wa.me/5581983022802?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex justify-center lg:justify-start gap-2"

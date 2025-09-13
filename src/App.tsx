@@ -13,7 +13,7 @@ function App() {
       <Outlet />
       <Footer />
       <a
-        href="https://wa.me/558183022802"
+        href="https://wa.me/5581983022802?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
         target="_blank"
         rel="noopener noreferrer"
         title="Entrar em contato pelo WhatsApp"
