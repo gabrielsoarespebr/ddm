@@ -10,7 +10,7 @@ export const Header = () => {
         <div id="logoContainer" className="flex items-center">
           <img
             src={dmmLogo}
-            alt="Logotipo da DDM Distribuição e Manutenção Industrial"
+            alt="Logotipo da DMM Distribuição e Manutenção Industrial"
             id="company-logo"
           />
           <div className="text-center">

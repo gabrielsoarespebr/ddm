@@ -62,7 +62,7 @@ export const Footer = () => {
       </div>
       <div className="text-center pt-10 pb-5">
         <p className="font-bold">
-          DDM - Distribuição e Manutenção Industrial &#8226;{" "}
+          DMM - Distribuição e Manutenção Industrial &#8226;{" "}
           {new Date().getUTCFullYear()} &#8226; Todos os direitos reservados
         </p>
         <p>
