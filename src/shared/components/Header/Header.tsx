@@ -12,6 +12,8 @@ export const Header = () => {
             src={dmmLogo}
             alt="Logotipo da DMM Distribuição e Manutenção Industrial"
             id="company-logo"
+            width={112}
+            height={112}
           />
           <div className="text-center">
             <h1 className="company-title">DMM</h1>

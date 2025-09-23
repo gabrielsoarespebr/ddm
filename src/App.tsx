@@ -20,7 +20,13 @@ function App() {
         aria-label="Entrar em contato pelo WhatsApp"
         id="whatsapp-fixed-icon"
       >
-        <img src={whatsappIcon} alt="Ícone de WhatsApp" />
+        <img
+          src={whatsappIcon}
+          alt="Ícone de WhatsApp"
+          loading="lazy"
+          width={96}
+          height={96}
+        />
       </a>
     </>
   );
