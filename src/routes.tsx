@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import { Home } from "./pages/Home/Home";
-import { ProductCatalogue } from "./pages/ProductCatalogue/ProductCatalogue";
+import { ProductCataloguePage } from "./pages/ProductCataloguePage/ProductCataloguePage";
 
 export const router = createBrowserRouter([
   {
@@ -9,7 +9,7 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: "catalogue", element: <ProductCatalogue /> },
+      { path: "catalogue", element: <ProductCataloguePage /> },
     ],
   },
   { path: "*", element: <h1>404 - Página não encontrada</h1> },

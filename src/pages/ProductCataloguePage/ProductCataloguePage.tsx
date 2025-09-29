@@ -1,7 +1,7 @@
 import "./style.css";
 import workers from "../../assets/images/workers.webp";
 
-export const ProductCatalogue = () => {
+export const ProductCataloguePage = () => {
   return (
     <div id="catalogue" className="pt-10 text-center">
       <p className="highlight-title-text">Em breve: Catálogo de produtos</p>
