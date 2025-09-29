@@ -1,7 +1,7 @@
 import { productList } from "../../../../features/product/data";
 import { ProductCard } from "../ProductCard/ProductCard";
 
-export const Catalogue = () => {
+export const ProductCatalogue = () => {
   return (
     <div>
       <p>Catálogo</p>
