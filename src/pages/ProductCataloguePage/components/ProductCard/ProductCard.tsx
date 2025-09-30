@@ -21,7 +21,7 @@ export const ProductCard = ({ product }: ProductProps) => {
           <p className="text-gray-500 line-clamp-4">{product.description}</p>
         </div>
         <button
-          className="w-full mt-4 p-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-b cursor-pointer"
+          className="w-full p-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-b cursor-pointer"
           onClick={() => dispatch(addToCart(product))}
         >
           Adicionar ao orçamento
