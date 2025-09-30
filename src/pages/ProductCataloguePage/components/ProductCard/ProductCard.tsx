@@ -18,7 +18,6 @@ export const ProductCard = ({ product }: ProductProps) => {
       <div className="h-1/2 flex flex-col justify-between">
         <div className="p-2">
           <p className="font-bold">{product.name}</p>
-          <p className="text-gray-500 line-clamp-4">{product.description}</p>
         </div>
         <button
           className="w-full p-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-b cursor-pointer"
