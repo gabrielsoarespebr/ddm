@@ -1,10 +1,12 @@
+import "./style.css";
 import { useState } from "react";
 import { productList } from "../../../../features/product/data";
 import { ProductCard } from "../ProductCard/ProductCard";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const ProductCatalogue = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const productAmountPerPage = 3;
+  const productAmountPerPage = 24;
 
   const pageAmount = Math.ceil(productList.length / productAmountPerPage);
 
@@ -27,13 +29,13 @@ export const ProductCatalogue = () => {
           </li>
         ))}
       </ul>
-      <ul className="flex">
+      <ul id="pagination" className="flex">
         <li>
           <button
             onClick={() => setCurrentPage(currentPage - 1)}
             disabled={currentPage === 1}
           >
-            Anterior
+            <ArrowLeft />
           </button>
         </li>
         {[...Array(pageAmount).keys()].map((pageIndex) => (
@@ -48,7 +50,7 @@ export const ProductCatalogue = () => {
             onClick={() => setCurrentPage(currentPage + 1)}
             disabled={currentPage === pageAmount}
           >
-            Próxima
+            <ArrowRight />
           </button>
         </li>
       </ul>
