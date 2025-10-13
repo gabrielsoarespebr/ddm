@@ -2,7 +2,7 @@ import "./style.css";
 import { useState } from "react";
 import { productList } from "../../../../features/product/data";
 import { ProductCard } from "../ProductCard/ProductCard";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Pagination } from "../../../../shared/components/Pagination/Pagination";
 
 export const ProductCatalogue = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,31 +29,11 @@ export const ProductCatalogue = () => {
           </li>
         ))}
       </ul>
-      <ul id="pagination" className="flex">
-        <li>
-          <button
-            onClick={() => setCurrentPage(currentPage - 1)}
-            disabled={currentPage === 1}
-          >
-            <ArrowLeft />
-          </button>
-        </li>
-        {[...Array(pageAmount).keys()].map((pageIndex) => (
-          <li key={pageIndex + 1}>
-            <button onClick={() => setCurrentPage(pageIndex + 1)}>
-              {pageIndex + 1}
-            </button>
-          </li>
-        ))}
-        <li>
-          <button
-            onClick={() => setCurrentPage(currentPage + 1)}
-            disabled={currentPage === pageAmount}
-          >
-            <ArrowRight />
-          </button>
-        </li>
-      </ul>
+      <Pagination
+        pageAmount={pageAmount}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };
