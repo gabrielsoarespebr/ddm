@@ -24,7 +24,10 @@ export const Pagination = ({
         <>
           {[...Array(pageAmount).keys()].map((pageIndex) => (
             <li key={pageIndex + 1}>
-              <button onClick={() => setCurrentPage(pageIndex + 1)}>
+              <button
+                onClick={() => setCurrentPage(pageIndex + 1)}
+                className={currentPage === pageIndex + 1 ? "active" : ""}
+              >
                 {pageIndex + 1}
               </button>
             </li>
