@@ -1,0 +1,24 @@
+#pagination button {
+  border: 1px solid var(--colorSenary);
+  border-radius: var(--borderRounded);
+
+  width: 3rem;
+
+  padding: 0.3rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    background-color: var(--colorSecondary);
+    border-color: var(--colorSecondary);
+    color: white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    background-color: var(--colorSeptenary);
+  }
+}

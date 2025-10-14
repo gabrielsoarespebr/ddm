@@ -29,11 +29,13 @@ export const ProductCatalogue = () => {
           </li>
         ))}
       </ul>
-      <Pagination
-        pageAmount={pageAmount}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
+      <div className="flex justify-center items-center mb-20">
+        <Pagination
+          pageAmount={pageAmount}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
     </div>
   );
 };
