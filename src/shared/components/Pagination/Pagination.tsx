@@ -19,7 +19,7 @@ export const Pagination = ({
           <ArrowLeft />
         </button>
       </li>
-      {/* PAGINACAO PARA POUCAS PAGINAS */}
+      {/* PAGINATION FOR A SMALL NUMBER OF PAGES */}
       {pageAmount <= buttonAmountMax - 2 && (
         <>
           {[...Array(pageAmount).keys()].map((pageIndex) => (
@@ -31,7 +31,7 @@ export const Pagination = ({
           ))}
         </>
       )}
-      {/* PAGINACAO PARA MUITAS PAGINAS - PAGINA ATUAL NAS EXTREMIDADES*/}
+      {/* PAGINATION FOR MANY PAGES - CURRENT PAGE AT THE EDGES */}
       {pageAmount > buttonAmountMax - 2 &&
         (currentPage <= 6 || currentPage > pageAmount - 6) && (
           <>
@@ -63,7 +63,7 @@ export const Pagination = ({
             ))}
           </>
         )}
-      {/* PAGINACAO PARA MUITAS PAGINAS - PAGINA ATUAL NO MEIO*/}
+      {/* PAGINATION FOR MANY PAGES - CURRENT PAGE IN THE MIDDLE */}
       {pageAmount > buttonAmountMax - 2 &&
         currentPage > 6 &&
         currentPage <= pageAmount - 6 && (
