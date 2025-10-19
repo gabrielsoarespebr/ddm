@@ -1,5 +1,8 @@
 import "./style.css";
 import industrialBelt from "../../../../assets/images/industrialBelt.webp";
+import allProducts from "../../../../assets/images/allProducts.webp";
+import pulley from "../../../../assets/images/pulley.webp";
+import bearing from "../../../../assets/images/bearing.webp";
 import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
 import { handleCategorySelection } from "../../../../features/category/categorySlice";
 
@@ -8,14 +11,14 @@ export const CatalogueFilterPanel = () => {
   const categorySelected = useAppSelector((state) => state.category);
 
   const categoryList = [
-    { id: "todos", title: "Todos os produtos", imageUrl: industrialBelt },
+    { id: "todos", title: "Todos os produtos", imageUrl: allProducts },
     {
       id: "correias-industriais",
       title: "Correias industriais",
       imageUrl: industrialBelt,
     },
-    { id: "polias", title: "Polias", imageUrl: industrialBelt },
-    { id: "rolamentos", title: "Rolamentos", imageUrl: industrialBelt },
+    { id: "polias", title: "Polias", imageUrl: pulley },
+    { id: "rolamentos", title: "Rolamentos", imageUrl: bearing },
   ];
 
   return (
