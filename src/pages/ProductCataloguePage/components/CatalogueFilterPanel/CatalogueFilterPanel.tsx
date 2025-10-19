@@ -1,9 +1,11 @@
+import "./style.css";
 import industrialBelt from "../../../../assets/images/industrialBelt.webp";
-import { useAppDispatch } from "../../../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
 import { handleCategorySelection } from "../../../../features/category/categorySlice";
 
 export const CatalogueFilterPanel = () => {
   const dispatch = useAppDispatch();
+  const categorySelected = useAppSelector((state) => state.category);
 
   const categoryList = [
     { id: "todos", title: "Todos os produtos", imageUrl: industrialBelt },
@@ -18,9 +20,14 @@ export const CatalogueFilterPanel = () => {
 
   return (
     <div className="py-10 flex flex-col items-center">
-      <ul className="w-1/2 flex justify-around">
+      <ul id="category-list-container" className="w-1/2 flex justify-around">
         {categoryList.map((category) => (
-          <li key={category.id} className="text-center w-1/6">
+          <li
+            key={category.id}
+            className={`text-center w-1/6 ${
+              categorySelected === category.id ? "active" : ""
+            }`}
+          >
             <button
               onClick={() => dispatch(handleCategorySelection(category.id))}
             >

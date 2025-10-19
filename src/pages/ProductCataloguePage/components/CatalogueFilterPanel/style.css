@@ -1,0 +1,13 @@
+#category-list-container .active {
+  background: linear-gradient(var(--colorTertiary), var(--colorSecondary));
+  color: white;
+
+  border-radius: var(--borderRounded);
+  padding: 0.3rem;
+
+  transition-duration: 0.5s;
+
+  & img {
+    border-radius: var(--borderRounded);
+  }
+}
