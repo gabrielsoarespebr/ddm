@@ -1,39 +1,46 @@
 import "./style.css";
 import { useEffect, useState } from "react";
-import { productList } from "../../../../features/product/data";
+import { productList, type Product } from "../../../../features/product/data";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { Pagination } from "../../../../shared/components/Pagination/Pagination";
 import { useAppSelector } from "../../../../app/hooks";
 
 export const ProductCatalogue = () => {
-  // CATEGORY FILTER
   const categorySelected = useAppSelector((state) => state.category);
+  const searchText = useAppSelector((state) => state.search);
 
-  const [productListAfterCategoryFilter, setProductListAfterCategoryFilter] =
-    useState(productList);
+  const [productListAfterFilter, setProductListAfterFilter] = useState<
+    Product[]
+  >([]);
 
   useEffect(() => {
-    const productListFiltered = productList.filter(
+    // CATEGORY FILTER
+    const productListCategoryFiltered = productList.filter(
       (product) =>
         categorySelected === "todos" || product.category === categorySelected
     );
 
-    setProductListAfterCategoryFilter(productListFiltered);
+    // SEARCH FILTER
+    const productListSearchFiltered = productListCategoryFiltered.filter(
+      (product) => product.name.toLowerCase().includes(searchText)
+    );
+
+    setProductListAfterFilter(productListSearchFiltered);
 
     setCurrentPage(1);
-  }, [categorySelected]);
+  }, [categorySelected, searchText]);
 
   // PAGINATION
   const [currentPage, setCurrentPage] = useState(1);
   const productAmountPerPage = 24;
 
   const pageAmount = Math.ceil(
-    productListAfterCategoryFilter.length / productAmountPerPage
+    productListAfterFilter.length / productAmountPerPage
   );
 
   const currentIndex = (currentPage - 1) * productAmountPerPage;
 
-  const productListVisibleOnPage = productListAfterCategoryFilter.slice(
+  const productListVisibleOnPage = productListAfterFilter.slice(
     currentIndex,
     currentIndex + productAmountPerPage
   );

@@ -1,13 +1,22 @@
 import "./style.css";
+
 import industrialBelt from "../../../../assets/images/industrialBelt.webp";
 import allProducts from "../../../../assets/images/allProducts.webp";
 import pulley from "../../../../assets/images/pulley.webp";
 import bearing from "../../../../assets/images/bearing.webp";
+
+import { Search } from "lucide-react";
+
+import { useState } from "react";
+
 import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
 import { handleCategorySelection } from "../../../../features/category/categorySlice";
+import { searchProduct } from "../../../../features/search/searchSlice";
 
 export const CatalogueFilterPanel = () => {
   const dispatch = useAppDispatch();
+
+  // CATEGORY FILTER
   const categorySelected = useAppSelector((state) => state.category);
 
   const categoryList = [
@@ -20,6 +29,9 @@ export const CatalogueFilterPanel = () => {
     { id: "polias", title: "Polias", imageUrl: pulley },
     { id: "rolamentos", title: "Rolamentos", imageUrl: bearing },
   ];
+
+  // SEARCH FILTER
+  const [searchText, setSearchText] = useState("");
 
   return (
     <div className="py-10 flex flex-col items-center">
@@ -44,7 +56,18 @@ export const CatalogueFilterPanel = () => {
           </li>
         ))}
       </ul>
-      <input type="text" name="" id="" className="center border" />
+      <div>
+        <input
+          type="text"
+          name=""
+          id=""
+          className="center border"
+          onChange={(input) => setSearchText(input.target.value)}
+        />
+        <button onClick={() => dispatch(searchProduct(searchText))}>
+          <Search />
+        </button>
+      </div>
     </div>
   );
 };
