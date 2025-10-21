@@ -1,4 +1,4 @@
-#id-to-cart-btn {
+#add-to-cart-btn {
   transition: 0.7s;
   background: linear-gradient(
       20deg,
@@ -9,6 +9,6 @@
     var(--x, 0) / 200%;
 }
 
-#id-to-cart-btn:hover {
+#add-to-cart-btn:hover {
   --x: 100%;
 }

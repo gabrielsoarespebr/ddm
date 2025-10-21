@@ -22,7 +22,7 @@ export const ProductCard = ({ product }: ProductProps) => {
         </div>
         <button
           className="w-full p-2 text-white font-bold rounded-b cursor-pointer"
-          id="id-to-cart-btn"
+          id="add-to-cart-btn"
           onClick={() => dispatch(addToCart(product))}
         >
           Adicionar ao orçamento
