@@ -56,15 +56,19 @@ export const CatalogueFilterPanel = () => {
           </li>
         ))}
       </ul>
-      <div>
+      <div className="flex mt-10 mb-2">
         <input
           type="text"
-          name=""
-          id=""
+          name="product-searchbar-input"
+          id="product-searchbar-input"
           className="center border"
+          placeholder="Exemplo: POLIA ROYAL 9MM"
           onChange={(input) => setSearchText(input.target.value)}
         />
-        <button onClick={() => dispatch(searchProduct(searchText))}>
+        <button
+          id="product-searchbar-button"
+          onClick={() => dispatch(searchProduct(searchText))}
+        >
           <Search />
         </button>
       </div>

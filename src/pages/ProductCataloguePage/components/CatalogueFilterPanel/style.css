@@ -11,3 +11,37 @@
     border-radius: var(--borderRounded);
   }
 }
+
+#product-searchbar-input {
+  width: 20vw;
+
+  padding: 0 0.4rem;
+
+  border-radius: var(--borderRounded) 0 0 var(--borderRounded);
+}
+
+#product-searchbar-button {
+  padding: 0.5rem;
+
+  border-radius: 0 var(--borderRounded) var(--borderRounded) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+      20deg,
+      var(--colorSecondary),
+      var(--colorTertiary) 51%,
+      var(--colorSecondary)
+    )
+    var(--x, 0) / 200%;
+  color: white;
+
+  transition: 0.7s;
+}
+
+#product-searchbar-button:hover {
+  --x: 100%;
+
+  cursor: pointer;
+}
