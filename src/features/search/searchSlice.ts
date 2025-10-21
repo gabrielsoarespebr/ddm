@@ -4,7 +4,7 @@ const searchSlice = createSlice({
   name: "search",
   initialState: "",
   reducers: {
-    searchProduct(state, action) {
+    searchProduct(_, action) {
       return action.payload.toLowerCase();
     },
   },

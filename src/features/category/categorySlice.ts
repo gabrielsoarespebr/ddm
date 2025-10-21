@@ -4,7 +4,7 @@ const categorySlice = createSlice({
   name: "category",
   initialState: "todos",
   reducers: {
-    handleCategorySelection(state, action) {
+    handleCategorySelection(_, action) {
       return action.payload;
     },
   },
