@@ -22,7 +22,13 @@ export const ProductCatalogue = () => {
 
     // SEARCH FILTER
     const productListSearchFiltered = productListCategoryFiltered.filter(
-      (product) => product.name.toLowerCase().includes(searchText)
+      (product) => {
+        const queryWords = searchText.toLowerCase().split(/\s+/);
+
+        return queryWords.every((word) =>
+          product.name.toLowerCase().includes(word)
+        );
+      }
     );
 
     setProductListAfterFilter(productListSearchFiltered);
