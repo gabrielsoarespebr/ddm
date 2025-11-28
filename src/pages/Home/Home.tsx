@@ -1,6 +1,7 @@
 import "./style.css";
 import { CompanyServices } from "./components/CompanyServices/CompanyServices";
 import { CompanyMission } from "./components/CompanyMission/CompanyMission";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -15,7 +16,9 @@ export const Home = () => {
             operação.
           </p>
 
-          <button id="bannerCTA">Conheça nossos produtos</button>
+          <Link to="/catalogo" id="bannerCTA">
+            Conheça nossos produtos
+          </Link>
         </div>
       </div>
 
