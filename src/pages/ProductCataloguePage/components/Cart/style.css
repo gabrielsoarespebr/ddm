@@ -34,7 +34,7 @@
   }
 }
 
-#requestPricingLink {
+#request-pricing-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,5 +63,25 @@
 
   & > p {
     font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cart {
+    width: 100%;
+
+    & #cart-title {
+      width: 40vw;
+    }
+
+    & #request-pricing-link {
+      & svg {
+        width: 40px;
+      }
+
+      & p {
+        font-size: 130%;
+      }
+    }
   }
 }

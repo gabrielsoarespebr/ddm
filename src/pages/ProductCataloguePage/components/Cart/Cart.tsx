@@ -36,11 +36,15 @@ export const Cart = () => {
           className="fixed top-0 right-0 h-full w-1/3 flex flex-col"
         >
           <div className="my-3 px-5 flex justify-between items-center">
-            <div className="flex justify-center items-center gap-2">
+            <div
+              id="cart-title"
+              className="flex justify-center items-center gap-2"
+            >
               <ScrollText />
               <p className="font-bold">Lista de Orçamento</p>
             </div>
             <button
+              id="empty-cart-btn"
               className="flex gap-1 items-center rounded p-1 cursor-pointer bg-neutral-700 hover:bg-neutral-500 transition duration-700 ease-in-out"
               onClick={() => dispatch(emptyCart())}
             >
@@ -69,7 +73,7 @@ export const Cart = () => {
             href={requestPricingCustomURL(cartItemList)}
             target="_blank"
             rel="noopener noreferrer"
-            id="requestPricingLink"
+            id="request-pricing-link"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
