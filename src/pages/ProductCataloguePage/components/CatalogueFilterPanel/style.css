@@ -1,14 +1,18 @@
-#category-list-container .active {
-  background: linear-gradient(var(--colorTertiary), var(--colorSecondary));
-  color: white;
+#category-list-container {
+  width: 50%;
 
-  border-radius: var(--borderRounded);
-  padding: 0.3rem;
+  & li.active {
+    background: linear-gradient(var(--colorTertiary), var(--colorSecondary));
+    color: white;
 
-  transition-duration: 0.5s;
-
-  & img {
     border-radius: var(--borderRounded);
+    padding: 0.3rem;
+
+    transition-duration: 0.5s;
+
+    & img {
+      border-radius: var(--borderRounded);
+    }
   }
 }
 
@@ -49,5 +53,11 @@
 @media screen and (max-width: 768px) {
   #product-searchbar-input {
     width: 70vw;
+  }
+
+  #category-list-container {
+    width: 80%;
+
+    overflow-x: scroll;
   }
 }

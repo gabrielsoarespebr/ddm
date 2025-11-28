@@ -35,11 +35,11 @@ export const CatalogueFilterPanel = () => {
 
   return (
     <div className="py-10 flex flex-col items-center">
-      <ul id="category-list-container" className="w-1/2 flex justify-around">
+      <ul id="category-list-container" className="flex justify-around gap-5">
         {categoryList.map((category) => (
           <li
             key={category.id}
-            className={`text-center w-1/6 ${
+            className={`text-center ${
               categorySelected === category.id ? "active" : ""
             }`}
           >
