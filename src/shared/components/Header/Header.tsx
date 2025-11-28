@@ -2,6 +2,7 @@ import "./style.css";
 import dmmLogo from "../../../assets/images/dmmLogo.webp";
 import { Navbar } from "../Navbar/Navbar";
 import { MapPinned, Phone } from "lucide-react";
+import { CartBtn } from "../CartBtn/CartBtn";
 
 export const Header = () => {
   return (
@@ -41,6 +42,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
+        <CartBtn />
       </div>
       <Navbar />
     </header>
