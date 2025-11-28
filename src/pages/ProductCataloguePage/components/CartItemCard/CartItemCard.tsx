@@ -50,7 +50,7 @@ export const CartItemCard = ({ cartItem }: CartItemProps) => {
             onClick={() => dispatch(removeFromCart(cartItem.id))}
           >
             <Trash color="white" size={14} />
-            <p className="text-white text-sm">Excluir</p>
+            <p className="text-white text-sm">Remover</p>
           </button>
         </div>
       </div>

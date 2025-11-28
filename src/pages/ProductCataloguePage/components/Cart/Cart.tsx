@@ -35,7 +35,7 @@ export const Cart = () => {
           onClick={() => dispatch(emptyCart())}
         >
           <Trash color="white" size={14} />
-          <p className="text-white text-sm">Excluir tudo</p>
+          <p className="text-white text-sm">Remover tudo</p>
         </button>
       </div>
 
