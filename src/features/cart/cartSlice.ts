@@ -7,10 +7,12 @@ export interface CartItem extends Product {
 
 interface CartState {
   cartItemList: CartItem[];
+  isCartOpen: boolean;
 }
 
 const initialState: CartState = {
   cartItemList: [],
+  isCartOpen: false,
 };
 
 const cartSlice = createSlice({
@@ -53,9 +55,17 @@ const cartSlice = createSlice({
     emptyCart(state) {
       state.cartItemList = [];
     },
+    toggleCartVisibility(state) {
+      state.isCartOpen = !state.isCartOpen;
+    },
   },
 });
 
-export const { addToCart, removeFromCart, updateQuantity, emptyCart } =
-  cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  updateQuantity,
+  emptyCart,
+  toggleCartVisibility,
+} = cartSlice.actions;
 export default cartSlice.reducer;
