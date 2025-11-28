@@ -44,6 +44,7 @@ export const CatalogueFilterPanel = () => {
             }`}
           >
             <button
+              className="cursor-pointer"
               onClick={() => dispatch(handleCategorySelection(category.id))}
             >
               <img
