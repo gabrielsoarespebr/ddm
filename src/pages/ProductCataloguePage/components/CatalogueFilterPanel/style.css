@@ -45,3 +45,9 @@
 
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  #product-searchbar-input {
+    width: 70vw;
+  }
+}
