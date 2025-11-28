@@ -1,6 +1,5 @@
 #cart {
-  height: calc(100vh - var(--headerHeight) - var(--dividerHeight));
-  top: calc(var(--headerHeight) + var(--dividerHeight));
+  z-index: 999;
 
   background-color: var(--colorSeptenary);
 }
