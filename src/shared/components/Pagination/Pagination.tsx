@@ -10,7 +10,7 @@ export const Pagination = ({
   const buttonAmountMax = 15;
 
   return (
-    <ul id="pagination" className="flex">
+    <ul id="pagination" className="flex flex-wrap mx-20">
       <li>
         <button
           onClick={() => setCurrentPage(currentPage - 1)}
