@@ -41,7 +41,7 @@ export const Cart = () => {
               <p className="font-bold">Lista de Orçamento</p>
             </div>
             <button
-              className="flex gap-1 items-center bg-neutral-700 hover:bg-neutral-500 rounded p-1 cursor-pointer"
+              className="flex gap-1 items-center rounded p-1 cursor-pointer bg-neutral-700 hover:bg-neutral-500 transition duration-700 ease-in-out"
               onClick={() => dispatch(emptyCart())}
             >
               <Trash color="white" size={14} />
