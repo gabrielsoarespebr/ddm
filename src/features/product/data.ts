@@ -9,56 +9,56 @@ export interface Product {
 
 export const productList: Product[] = [
   {
-    id: "ROYPO0001",
+    id: "ROYCI0001",
     name: "CORREIA IND. GATES POLYFLEX 7M1320",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/299103656/whatsapp-image-2024-08-28-at-14-17-41-q0aibrcmc8.jpeg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO0002",
+    id: "ROYCI0002",
     name: "CORREIA IND. REXON PU/AÇO 230 XL 050 12,7MM",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/109447520/208xl-pu-timing-belt-nwnp343csf.jpg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO0003",
+    id: "ROYCI0003",
     name: "CORREIA IND. REXON BORRACHA 6MM",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/93756259/b56799fe6b.jpg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO0269",
+    id: "ROYCI0269",
     name: "CORREIA IND. REXON PU/AÇO 50MM T10-1600",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/371600748/d076a3d662-3ib9wmwq8w.jpg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO0271",
+    id: "ROYCI0271",
     name: "CORREIA IND. MITSUBOSHI SINCRONIZADA 40MM",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/296147640/correia-ind-mitsuboshi-sincronizada-40mm-h8m-472-8e411b55-ud3deajty0.jpg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO4455",
+    id: "ROYCI4455",
     name: "CORREIA IND. MITSUBOSHI SINCRONIZADA 35MM",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/296137462/correia-ind-mitsuboshi-sincronizada-35mm-h5m-200-f9a90cf3-ouscn8g768.jpg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO7149",
+    id: "ROYCI7149",
     name: "CORREIA IND. MITSUBOSHI SINCRONIZADA 30MM",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/296131096/correia-ind-mitsuboshi-sincronizada-30mm-h5m-200-c7b8509c-pg82zt6ucz.jpg",
     category: "correias-industriais",
   },
   {
-    id: "ROYPO10000",
+    id: "ROYCI10000",
     name: "CORREIA IND. MITSUBOSHI SINCRONIZADA 25MM",
     imageUrl:
       "https://cdn.awsli.com.br/300x300/1833/1833853/produto/296124134/correia-ind-mitsuboshi-sincronizada-25mm-h5m-2505-4a2d8896-2jabdmskek.jpg",
