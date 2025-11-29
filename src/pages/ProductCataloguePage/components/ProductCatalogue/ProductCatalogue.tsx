@@ -38,7 +38,7 @@ export const ProductCatalogue = () => {
 
   // PAGINATION
   const [currentPage, setCurrentPage] = useState(1);
-  const productAmountPerPage = 24;
+  const productAmountPerPage = 12;
 
   const pageAmount = Math.ceil(
     productListAfterFilter.length / productAmountPerPage
